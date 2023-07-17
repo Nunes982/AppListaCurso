@@ -25,7 +25,7 @@
         android:layout_marginTop="70dp"
         android:ems="10"
         android:hint="@string/txt_hint_edit_primeiro_nome"
-        android:inputType="text"
+        android:inputType="text|textPersonName|textAutoComplete"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.875"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +38,7 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/txt_hint_edit_sobrenome"
-        android:inputType="text"
+        android:inputType="text|textPersonName|textAutoComplete"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editPrimeiroNome" />
@@ -49,7 +49,7 @@
         android:layout_margin="16dp"
         android:ems="10"
         android:hint="@string/txt_hint_edit_nome_do_curso"
-        android:inputType="text"
+        android:inputType="text|textAutoComplete"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editSobrenome" />
@@ -60,7 +60,7 @@
         android:layout_margin="16dp"
         android:ems="10"
         android:hint="@string/txt_hint_edit_telefone_contato"
-        android:inputType="text"
+        android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editNomeDoCurso" />
