@@ -1,6 +1,7 @@
 package devandroid.anderson.applistacurso.view;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         outraPessoa.setCursoDesejado("Psicologia");
         outraPessoa.setTelefoneContato("(11) 91234-5678");
 
-
+/*
         dadosPessoa = "Primeiro nome: ";
         dadosPessoa += pessoa.getPrimeiroNome();
         dadosPessoa += " Sobrenome: ";
@@ -52,9 +53,11 @@ public class MainActivity extends AppCompatActivity {
         dadosOutraPessoa += " Curso Desejado ";
         dadosOutraPessoa += outraPessoa.getCursoDesejado();
         dadosOutraPessoa += " Telefone de Contato ";
-        dadosOutraPessoa += outraPessoa.getTelefoneContato();
+        dadosOutraPessoa += outraPessoa.getTelefoneContato();*/
 
-        int parada = 0;
+        Log.i("POOAndroid", "Objeto pessoa: "+pessoa.toString());
+        Log.i("POOAndroid", "Objeto outra pessoa: "+outraPessoa.toString());
+
 
     }
 }
