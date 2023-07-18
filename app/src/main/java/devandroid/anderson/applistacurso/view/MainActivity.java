@@ -63,14 +63,11 @@ public class MainActivity extends AppCompatActivity {
         editNomeDoCurso.setText(outraPessoa.getCursoDesejado());
         editTelefoneContato.setText(outraPessoa.getTelefoneContato());
 
-        btnLimpar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                editPrimeiroNome.setText("");
-                editSobrenome.setText("");
-                editNomeDoCurso.setText("");
-                editTelefoneContato.setText("");
-            }
+        btnLimpar.setOnClickListener(v -> {
+            editPrimeiroNome.setText("");
+            editSobrenome.setText("");
+            editNomeDoCurso.setText("");
+            editTelefoneContato.setText("");
         });
 
         btnFinalizar.setOnClickListener(new View.OnClickListener() {
