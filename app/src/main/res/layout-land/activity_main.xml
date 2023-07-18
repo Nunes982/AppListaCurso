@@ -40,7 +40,7 @@
     <EditText
         android:id="@+id/editNomeDoCurso"
         android:layout_width="0dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
@@ -54,7 +54,7 @@
     <EditText
         android:id="@+id/editTelefoneContato"
         android:layout_width="0dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
@@ -68,7 +68,7 @@
     <EditText
         android:id="@+id/editPrimeiroNome"
         android:layout_width="0dp"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
@@ -82,7 +82,7 @@
     <Button
         android:id="@+id/btnLimpar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:text="@string/txt_button_limpar"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnSalvar"
         app:layout_constraintStart_toStartOf="@+id/editTelefoneContato" />
@@ -90,7 +90,7 @@
     <Button
         android:id="@+id/btnSalvar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:text="@string/txt_button_salvar"
@@ -101,7 +101,7 @@
     <Button
         android:id="@+id/btnFinalizar"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
