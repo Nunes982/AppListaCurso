@@ -10,10 +10,12 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import devandroid.anderson.applistacurso.R;
+import devandroid.anderson.applistacurso.controller.PessoaController;
 import devandroid.anderson.applistacurso.model.Pessoa;
 
 public class MainActivity extends AppCompatActivity {
 
+    PessoaController controller;
     Pessoa pessoa;
     Pessoa outraPessoa;
 
@@ -30,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        controller = new PessoaController();
+        controller.toString();
 
         pessoa = new Pessoa();
         //Atribuir conteúdo, dados, valores para o Objeto
@@ -80,6 +85,8 @@ public class MainActivity extends AppCompatActivity {
                 pessoa.setTelefoneContato(editTelefoneContato.getText().toString());
 
                 Toast.makeText(MainActivity.this, "Salvo " + pessoa.toString(), Toast.LENGTH_LONG).show();
+
+                controller.salvar(pessoa);
             }
         });
 
