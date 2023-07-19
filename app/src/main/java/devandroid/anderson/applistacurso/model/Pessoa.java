@@ -50,7 +50,6 @@ public class Pessoa {
 
     //to String - Para Textos - Para Strings de Caracteres
 
-
     @Override
     public String toString() {
         return "Pessoa{" +
