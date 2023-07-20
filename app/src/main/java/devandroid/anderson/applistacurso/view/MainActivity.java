@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     PessoaController controller;
     Pessoa pessoa;
-    Pessoa outraPessoa;
+
 
     EditText editPrimeiroNome;
     EditText editSobrenome;
@@ -44,28 +44,24 @@ public class MainActivity extends AppCompatActivity {
         controller.toString();
 
         pessoa = new Pessoa();
-        //Atribuir conteúdo, dados, valores para o Objeto
-        //Conforme o seu MODELO, TEMPLATE
-
-        outraPessoa = new Pessoa();
-        outraPessoa.setPrimeiroNome("Renata");
-        outraPessoa.setSobreNome("Candido");
-        outraPessoa.setCursoDesejado("Psicologia");
-        outraPessoa.setTelefoneContato("(11) 91234-5678");
+        pessoa.setPrimeiroNome(preferences.getString("primeiroNome", "NA"));
+        pessoa.setSobreNome(preferences.getString("sobreNome", "NA"));
+        pessoa.setCursoDesejado(preferences.getString("nomeCurso", "NA"));
+        pessoa.setTelefoneContato(preferences.getString("telefoneContato", "NA"));
 
         editPrimeiroNome = findViewById(R.id.editPrimeiroNome);
         editSobrenome = findViewById(R.id.editSobrenome);
         editNomeDoCurso = findViewById(R.id.editNomeDoCurso);
         editTelefoneContato = findViewById(R.id.editTelefoneContato);
 
+        editPrimeiroNome.setText(pessoa.getPrimeiroNome());
+        editSobrenome.setText(pessoa.getSobreNome());
+        editNomeDoCurso.setText(pessoa.getCursoDesejado());
+        editTelefoneContato.setText(pessoa.getTelefoneContato());
+
         btnLimpar = findViewById(R.id.btnLimpar);
         btnSalvar = findViewById(R.id.btnSalvar);
         btnFinalizar = findViewById(R.id.btnFinalizar);
-
-        editPrimeiroNome.setText(outraPessoa.getPrimeiroNome());
-        editSobrenome.setText(outraPessoa.getSobreNome());
-        editNomeDoCurso.setText(outraPessoa.getCursoDesejado());
-        editTelefoneContato.setText(outraPessoa.getTelefoneContato());
 
         btnLimpar.setOnClickListener(v -> {
             editPrimeiroNome.setText("");
@@ -104,6 +100,5 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Log.i("POOAndroid", "Objeto pessoa: " + pessoa.toString());
-        Log.i("POOAndroid", "Objeto outra pessoa: " + outraPessoa.toString());
     }
 }
