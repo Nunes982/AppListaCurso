@@ -4,12 +4,22 @@ public class Pessoa {
 
     //Atributos - Objetos - Molde - Modelo - Template
 
+    private int id;
     private String primeiroNome;
     private String sobreNome;
     private String cursoDesejado;
     private String telefoneContato;
 
     //Metodos de acesso - Gets And Setters
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getPrimeiroNome() {
         return primeiroNome;
